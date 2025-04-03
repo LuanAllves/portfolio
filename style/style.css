@@ -64,7 +64,6 @@ h2 {
     margin: 20px;
 }
 
-
 #sobre-texto::after {
     content: '|'; /* Barra vertical */
     animation: piscar 1s infinite; /* Animação de piscar */
