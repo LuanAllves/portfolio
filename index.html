@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luan Alves - Portfólio</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <noscript>
+        <p>
+          Para uma melhor experiência, ative o JavaScript no seu navegador.
+        </p>
+        <style>
+          /* Estilos CSS específicos para quando o JavaScript está desativado */
+          body {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: white;
+            color: black;
+            
+          }
+
+          #intro, .intro-content, #sobre, .sobre-content {
+            max-width: 100vw;
+            position: static;
+            display: flexbox;
+            transform: translateX(0);
+            margin: 30px;
+          }
+        
+        </style>
+    </noscript>
+    <div class="container">
+
+        <section id="intro">
+            <div class="intro-content">
+                <h1 id="nome-destaque">Luan Alves</h1>
+                <p id="descricao">Desenvolvedor Front-end</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <div class="sobre-content">
+                <p id="sobre-texto"> Olá, me chamo Luan e estou em transição de carreira. Atualmente sou tecnico de instalação em uma empresa de paineis de led, e este é meu portfólio. </p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-content">
+                <img src="./assets/img/html-icon.png" alt="Favicon do HTML" id="skills">
+                <img src="./assets/img/js-icon.png" alt="Favicon do JavaScript" id="skills">
+                <img src="./assets/img/css-icon.png" alt="Favicon do CSS" id="skills">
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-content">
+                <div class="box-projects project1">
+                    <h3>Projeto 01</h3>
+                    <p>Em breve</p>
+                </div>
+                <div class="box-projects project2">
+                    <h3>Projeto 02</h3>
+                    <p>Em breve</p>
+                </div>
+                <div class="box-projects project3">
+                    <h3>Projeto 03</h3>
+                    <p>Em breve</p>
+                </div>
+                <div class="box-projects project4">
+                    <h3>Projeto 04</h3>
+                    <p>Em breve</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+    transition: background-color 1.5s ease;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-self: start;
+}
+
+h2 {
+    align-self: start;
+    grid-row: 1/ 2;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+#intro {
+    grid-row: 1/ 2;
+    grid-column: 1/ 4;
+}
+
+#nome-destaque {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+#descricao {
+    margin-top: 0;
+    text-align: end;
+}
+
+#sobre {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-row: 2/ 3;
+    grid-column: 1/ 2;
+    transition: opacity 1s ease-in-out;
+    justify-items: center; 
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.sobre-content {
+    grid-row: 2/ 3;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 2em;
+    margin: 20px;
+}
+
+
+#sobre-texto::after {
+    content: '|'; /* Barra vertical */
+    animation: piscar 1s infinite; /* Animação de piscar */
+}
+
+@keyframes piscar {
+    50% {
+        opacity: 0; /* Torna a barra invisível na metade da animação */
+    }
+}
+
+#habilidades {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-row: 2/ 3;
+    grid-column: 2/ 3;
+    justify-items: center;
+    align-items: center;
+    align-self: start;
+    gap: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    transition: opacity 1s ease-in-out;
+}
+
+.habilidades-content {
+    grid-row: 2/ 3;
+    justify-self: center;
+    align-self: self-start;
+}
+
+#skills {
+    animation: flutuar 2s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+    0% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+}
+
+/* Para diferenciar os tempos das animacoes */
+#skills:nth-child(2) {
+    animation-delay: 0.3s; /* Pequeno atraso para sincronizar */
+}
+#skills:nth-child(3) {
+    animation-delay: 0.6s; /* Atraso maior */
+}
+
+#projetos {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-row: 2/ 3;
+    grid-column: 3/ 4;
+    justify-items: center;
+    align-items: center;
+    align-self: start;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 15px;
+    transition: opacity 1s ease-in-out;
+}
+
+.projetos-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2/ 3;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.project1 {
+    grid-row: 2/ 3;
+    grid-column: 1/ 2;
+}
+
+.project2 {
+    grid-row: 2/ 3;
+    grid-column: 2/ 3;
+}
+
+.project3 {
+    grid-row: 3/ 4;
+    grid-column: 1/ 2;
+}
+
+.project4 {
+    grid-row: 3/ 4;
+    grid-column: 2/ 3;
+}
+
+.box-projects {
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.box-projects:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+}
