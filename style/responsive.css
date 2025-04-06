@@ -1,0 +1,71 @@
+/* Estilos para telas menores que 950px de largura */
+@media (max-height: 950px) or (max-width: 1300px){
+  body{
+    overflow-y: visible;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150vh;
+    justify-items: center;
+  }
+
+  #intro.fixed {
+    display: flex;
+    transform: none;
+    width: 90vw;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  #sobre.deslizado, #sobre {
+    transform: none;
+    width: 90vw;
+    transition: border 1s ease-in;
+    margin: 20px;
+  }
+
+  #habilidades {
+    width: 90vw;
+    margin: 20px;
+  }
+
+  #projetos {
+    width: 90vw;
+    margin: 20px;
+  }
+  
+}
+  
+/* Estilos para telas maiores que 1200px de altura */
+@media (min-height: 1200px) {
+  #intro.fixed {
+    transform: translateY(-350%);
+  }
+}
+
+@media (min-height: 1500px) {
+  #intro.fixed {
+    transform: translateY(-400%);
+  }
+}
+
+@media (min-height: 1700px) {
+  #intro.fixed {
+    transform: translateY(-450%);
+  }
+}
+
+@media (min-height: 1950px) {
+  #intro.fixed {
+    transform: translateY(-500%);
+  }
+}
+
+@media (min-height: 2100px) {
+  #intro.fixed {
+    transform: translateY(-550%);
+  }
+}

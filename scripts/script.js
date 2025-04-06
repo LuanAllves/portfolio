@@ -1,4 +1,4 @@
-const introContent = document.querySelector('.intro-content');
+const introContent = document.getElementById('intro');
 const sobreSection = document.getElementById('sobre');
 const sobreTexto = document.getElementById('sobre-texto');
 const habilidadesContent = document.getElementById('habilidades');
@@ -20,9 +20,7 @@ function subirNomeDescricao() {
 
 function mostrarSobre() {
     sobreSection.style.opacity = 1;
-
     setTimeout(digitarTexto, 2000);
-
 }
 
 function mostrarProjetos(){
